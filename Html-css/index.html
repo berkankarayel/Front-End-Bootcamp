@@ -21,7 +21,7 @@
     -->
 
     <span class="rem">non-semantic</span>
-    <div class="div1">nonsemantic</div>
+
     <h1>semantic</h1>
     <p>semantic</p>
     <header>semantic</header>
@@ -182,6 +182,144 @@
     <!-- controls olmadan video çalışmaz-->
     <img src="indir.jpg" alt="Fenerbahçe">
     <link rel="stylesheet" href="style.css">
+
+
+    <!--
+            Seçiciler : 
+            
+            1. Etiket Seçicisi (Element Selector)
+            Belirli bir HTML etiketine doğrudan stil uygular.
+            Aynı türdeki tüm etiketler etkilenir.
+            p {
+                color: blue;
+                font-size: 16px;
+}
+            2. Sınıf Seçicisi (Class Selector):
+
+            .alert {
+                color: red;
+                font-weight: bold;
+}
+    -->
+
+    <p class="alert">Bu bir uyarı mesajıdır.</p>
+    <p>Bu normal bir paragraf.</p>
+
+    <!--
+        3. ID Seçicisi (ID Selector): 
+         #header {
+            background-color: black;
+            color: white;
+}
+    -->
+    <h1 id="header">Başlık</h1>
+
+
+    <!--
+        4. Evrensel Seçici (Universal Selector):
+            Sayfadaki tüm HTML öğelerini seçer.
+            * (yıldız) sembolü kullanılır.
+
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+        5. Birleştirilmiş Seçiciler (Grouping Selector)
+
+            h1, h2, h3 {
+            font-family: Arial, sans-serif;
+}
+
+    -->
+
+
+    <!--
+            Kutu Modelinin Temel Yapısı 
+
+            html öğesi 4 ana bölümden oluşur 
+            İçerik (Content)
+            1.Metin, resim veya başka bir içeriğin yer aldığı bölümdür.
+
+            2.Dolgu (Padding)
+            İçerik ile kenarlık (border) arasındaki boşluktur.
+
+            3.Kenarlık (Border)
+            İçeriği ve dolguyu çevreleyen çerçevedir.
+
+            4.Dış Boşluk (Margin)
+            Öğeyi çevreleyen diğer öğelerden olan uzaklıktır.
+        -->
+
+
+    <div>
+        <h1>Berkan</h1>
+    </div>
+
+    <div class="box">Bu bir kutu modelidir.</div>
+
+    <!--
+        Display Block : 
+
+     bir r öğe tüm satırı kaplar ve kendinden sonra gelen öğeleri yeni bir satıra taşır.
+    Genişlik ve yükseklik (width, height) değerleri verilebilir. 
+    <div>
+    <p>
+    <h1> – <h6>
+    <ul>
+    <li>
+    
+    -->
+
+    <h1 class="block-example">Blovk Öğeyim</h1>
+    <h2 class="block-example">Bnede öğeyim</h2>
+
+
+    <!--
+    <span>
+    <a>
+    <strong>
+    <em>
+    -->
+    <span class="inline-example">Ben bir inline öğeyim!</span>
+    <a class="inline-example">Ben de bir inline öğeyim!</a>
+
+    <!--
+       3. Display: Inline-Block
+            Inline gibi aynı satırda yer alır, ancak genişlik ve yükseklik ayarlanabilir.
+            Hem inline hem de block özelliklerinin avantajlarını birleştirir.     
+    -->
+
+    <div class="inline-block-example">Ben bir inline-block öğeyim!</div>
+    <div class="inline-block-example">Ben de bir inline-block öğeyim!</div>
+
+    <!--
+        4. Display: None
+Öğeyi tamamen gizler ve sayfada yer kaplamaz.
+Görsel olarak görünmez ama DOM'da var olmaya devam eder.
+    -->
+    <p>Bu paragraf görünür.</p>
+    <p class="none-example">Bu paragraf gizlenmiştir.</p>
+
+    <div class="flex-example">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <div class="grid-example">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
 </body>
 
 </html>

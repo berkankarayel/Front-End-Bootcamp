@@ -23,3 +23,128 @@ td {
     --primary-color: #b8e80973;
     --bg: #dddddd;
 }
+
+.alert {
+    color: red;
+    font-weight: bold;
+}
+
+#header {
+    background-color: black;
+    color: white;
+}
+
+/*
+
+1. width & height (Genişlik ve Yükseklik):
+
+İçeriğin genişliğini ve yüksekliğini belirler.
+
+2. padding (Dolgu):
+
+İçerik ile kenarlık arasındaki boşluğu belirler.
+Dört yön için ayrı ayrı tanımlanabilir:
+
+padding-top (üst)
+padding-right (sağ)
+padding-bottom (alt)
+padding-left (sol)
+
+
+3. border (Kenarlık) 
+
+Kenarlığın kalınlığını, stilini ve rengini belirler.
+
+4. margin (Dış Boşluk)
+
+Öğeyi çevresindeki diğer öğelerden ayırır.
+Dört yön için ayrı ayrı tanımlanabilir:
+margin-top (üst)
+margin-right (sağ)
+margin-bottom (alt)
+margin-left (sol)
+
+5. box-sizing (Kutu Boyutlandırma)
+
+İçeriğin genişlik ve yüksekliği hesaplanırken hangi değerlerin dahil edileceğini belirler.
+content-box: Varsayılan. Yalnızca içerik alanı genişlik ve yüksekliği kapsar.
+border-box: Genişlik ve yükseklik, içerik + padding + border'ı içerir.
+
+*/
+
+
+div {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    /* Tüm yönlerde 10px */
+    padding: 10px 20px;
+    /* Üst/Alt: 10px, Sağ/Sol: 20px */
+    border: 2px solid black;
+    margin: 10px;
+    /* Tüm yönlerde 10px */
+    margin: 10px 20px;
+    /* Üst/Alt: 10px, Sağ/Sol: 20px */
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+.block-example {
+    display: block;
+    background-color: lightblue;
+    width: 200px;
+    height: 100px;
+}
+
+.inline-example {
+    display: inline;
+    background-color: lightgreen;
+}
+
+.inline-block-example {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}
+
+.none-example {
+    display: none;
+}
+
+.flex-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightyellow;
+}
+
+.flex-item {
+    width: 10px;
+    height: 40px;
+    background-color: lightblue;
+    margin: 1px;
+}
+
+.grid-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: lightgray;
+}
+
+.grid-item {
+    background-color: lightpink;
+    padding: 10px;
+}
