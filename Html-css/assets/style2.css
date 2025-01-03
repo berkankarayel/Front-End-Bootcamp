@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.relative {
+    --size: 20rem;
+    height: var(--size);
+    width: var(--size);
+    background-color: aliceblue;
+    margin: 3rem;
+    position: relative;
+}
+
+.absolute {
+    size: 5rem;
+    height: var(--size);
+    width: var(--size);
+    border-radius: calc(var(--size)/2);
+    background-color: red;
+    position: absolute;
+    line-height: var(--size);
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    top: calc(var(--size)/2 * -1);
+    right: calc(var(--size)/2 * -1);
+
+}
