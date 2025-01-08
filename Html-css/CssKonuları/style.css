@@ -1,0 +1,128 @@
+.paragraf1 {
+    color: red;
+}
+
+h1 {
+    font-size: large;
+}
+
+#onem {
+    color: blue;
+}
+
+/* Renk kodları*/
+
+.renk {
+    color: #777777;
+    background-color: rgb(246, 250, 200);
+}
+
+.kutu1 {
+
+    background-image: url(./indir.png);
+    /* arka plan resim ekleme*/
+    background-size: cover
+        /* resim birazdaha kaplanır*/
+    ;
+    background-position: center;
+    background-color: grey;
+    /* arka plan rengi */
+    width: 300px;
+    /* genişlik */
+    height: 200px;
+    /* yükseklik */
+    text-align: center;
+    /* metni hizalama şekli*/
+}
+
+/*
+    border ve radius : 
+
+
+*/
+
+.kutu2 {
+
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+
+    /* kalınlık tip renk*/
+    border: 2px solid red;
+    border-radius: 20px;
+    /* kenarların oval olasını sağlar */
+    background-position: center;
+    text-align: center;
+}
+
+/* width ve height*/
+
+.kutu3 {
+
+    background-color: brown;
+    height: 200px;
+    width: 50%;
+}
+
+/* Margin özelliği
+    : boşluk bırakmak için kullanılır . 
+
+    oluşturudpumuz divimizin çerçevesinın ile içindeki içeriği araasındaki mesafe padding
+    padding top bottom
+    padding rigt lef
+
+    divin çerçevesi ile yani borderin  dış taraf ile arasındaki mesafe arasındkai mesafeyede margin denir.
+
+*/
+
+
+.kutu5 {
+
+    background-color: lightblue;
+    width: 400px;
+    height: 200px;
+    margin: 0 50px;
+    /* Sağ ve sol 50px boşluk */
+    box-sizing: border-box;
+    /* Genişliğin margin ve padding dahil olmadan hesaplanmasını sağlar */
+    margin-left: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+
+/* display 
+
+block: satırın tamamını kaplar
+inline: bulunduğu alanı kaplar inline etiketlere genişlik ve yükseklik verilemez.
+inline-block: iki divi yan yana getirir hem inline hem block şekidle görülür.
+*/
+
+.kutu6 {
+    display: block;
+    display: inline;
+}
+
+/* text özellikleri */
+
+.dede {
+    color: red;
+    background-color: beige;
+    text-align: center;
+    /* Metni hizalar*/
+    font-weight: 700;
+    /* Kalınlaştırma yapar*/
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-transform: lowercase;
+    /* bütün yazı küçük harf*/
+    letter-spacing: 5px;
+    /* harfler arası mesafeyi açar*/
+    text-decoration: line-through;
+    /* yazının üzerine çizgi çeker */
+    word-spacing: 6px;
+}
