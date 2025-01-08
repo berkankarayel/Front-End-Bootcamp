@@ -176,3 +176,29 @@ div i {
     font-style: italic;
     font-weight: 500;
 }
+
+a:link {
+    color: black;
+    text-decoration: none;
+    /* link altındaki çizgi kalkar*/
+
+}
+
+/* üzerime gelindiği zaman */
+
+a:hover {
+    color: orange;
+    /* üzerine gelince turuncu olur*/
+}
+
+/* linke tıkladığın zaman ne yapılacağına söyler*/
+
+a:active {
+    background-color: blue;
+}
+
+/* siteye gittiğinde ne olacağını söyler*/
+
+a:visited {
+    color: blueviolet;
+}
