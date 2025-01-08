@@ -126,3 +126,40 @@ inline-block: iki divi yan yana getirir hem inline hem block şekidle görülür
     /* yazının üzerine çizgi çeker */
     word-spacing: 6px;
 }
+
+* {
+    /* Bütün elementleri seçer*/
+}
+
+p,
+h3 {
+    /* tüm paragraf ve h3  elementlerini seçer*/
+}
+
+div p {
+    /* div elementlerin içinde tüm paragrafları seçer*/
+}
+
+div>p {
+    /* parenti div olan tüm divleri seç*/
+}
+
+div+p {
+    /* div elementinden sonra gelen paragraf elementilerden ilknii alır*/
+}
+
+div>p:first-child {
+    /* parenti div olan p lerden ilkini seç*/
+}
+
+div>p:last-child {
+    /* yukarıdainin zıttı*/
+}
+
+div>p:nth-child(1) {
+    /* parenti div olan 3. p etikeetini seçer */
+}
+
+div>nav>p:nth-child(3) {
+    /*div içinde yer alan divlerin içindeki p lerden 3. sücüsnü seçer */
+}
