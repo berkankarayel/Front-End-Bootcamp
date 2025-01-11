@@ -1,0 +1,56 @@
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+
+
+    /* 3 parametreden oluşur kalınlık - kenarlık - renk */
+    border: 2px solid black;
+
+    /* orinali spearataiddr*/
+    border-collapse: collapse;
+}
+
+#customers th {
+    background-color: green;
+    color: #ffff
+}
+
+/* çift olanların arka plan rengini değiştirdik even çift demek*/
+#customers tr:nth-child(even) {
+
+    background-color: aqua
+}
+
+/* üzerine gelince orange yapar*/
+#customers tr:hover {
+    background-color: orange;
+}
+
+
+/* iki etiketi üst üste getirmek için z indeks kullanılır*/
+
+
+
+/* z indeks*/
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+}
+
+
+/*
+    overflow taşma 
+*/
+
+.overflow {
+    height: 150px;
+    background-color: bisque;
+    overflow: scroll;
+}
