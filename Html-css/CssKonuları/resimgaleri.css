@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    /* Tüm elementlerin padding ve border değerlerini toplam genişlik ve yüksekliğe dahil eder. */
+}
+
+body {
+    margin: 0;
+    /* Sayfanın varsayılan dış boşluklarını kaldırır. */
+    font-family: Arial;
+    /* Sayfanın yazı tipi stilini Arial olarak ayarlar. */
+}
+
+.header {
+    text-align: center;
+    /* Header içindeki metni yatayda ortalar. */
+    padding: 32px;
+    /* Header'a 32px iç boşluk ekler. */
+}
+
+.row {
+    display: flex;
+    /* Row'u flex container yapar, içindeki öğeleri yan yana dizer. */
+    flex-wrap: wrap;
+    /* Ekran daraldığında, öğelerin birden fazla satıra geçmesine izin verir. */
+    padding: 0 4px;
+    /* Row'un sol ve sağ tarafına 4px iç boşluk ekler. */
+}
+
+.column {
+    flex: 25%;
+    /* Her sütunun genişliğini %25 yapar (4 sütun eşit genişlikte olur). */
+    max-width: 25%;
+    /* Sütunların maksimum genişliğini %25 olarak sınırlar. */
+    padding: 0 4px;
+    /* Sütunların iç kenar boşluklarına 4px ekler. */
+}
+
+.column img {
+    margin-top: 8px;
+    /* Her resim arasında 8px boşluk bırakır. */
+    vertical-align: middle;
+    /* Resimlerin dikey hizalamasını ortalar. */
+}
+
+/* Responsive layout - 800px'den küçük ekranlarda 2 sütunlu düzen oluşturur */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        /* Her sütunun genişliğini %50 yapar (2 sütun olur). */
+        max-width: 50%;
+        /* Sütunların maksimum genişliğini %50 olarak sınırlar. */
+    }
+}
+
+/* Responsive layout - 600px'den küçük ekranlarda sütunları üst üste yığar */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        /* Her sütunun genişliğini %100 yapar (tek sütun olur). */
+        max-width: 100%;
+        /* Sütunların maksimum genişliğini %100 olarak sınırlar. */
+    }
+}
