@@ -67,7 +67,7 @@ let tp = 0;
 
 for (let i = 0; i < rakam.length; i++) {
     let rakams = rakam.charAt(i)
-    tp += (rakams * rakams * rakams *)
+    tp += (rakams * rakams * rakams)
 }
 
 if (Number(sayi == tp)) {
@@ -75,3 +75,64 @@ if (Number(sayi == tp)) {
 } else {
     console.log("armstorng sayı değildir.")
 }
+
+
+//? Örnek:  10 luk sayıyı 2 lik  tabana çevirme 
+
+convertDecimalToBinary(25)
+
+function convertDecimalToBinary(Number) {
+    let binary = ""
+    while (true) {
+        binary += (Number % 2).toString();
+        Number = Math.floor(Number / 2)
+        if (Number == 1) {
+            binary += 1;
+            break
+        }
+
+    }
+
+    let result = reverse(binary)
+    console.log("Sonuç :" + result)
+
+}
+
+
+function reverse(binary) {
+    let reversBinary = ""
+    for (let i = binary.length - 1; i >= 0; i--) {
+        reversBinary += binary.charAt(i)
+    }
+
+    return reversBinary;
+}
+
+
+
+
+//! 2lik saıyı 10 luk sayıya çevirme  
+
+console.log(Math.pow(2, 3)) // 2 üzeri 3 yapar
+
+function convertBinaryToDecimal(binary) {
+
+    let toplam = 0;
+    let us = 0;
+
+    for (let i = binary.length - 1; i >= 0; i--) {
+        toplam += Number(binary.charAt(i)) * Math.pow(2, us)
+        us++;
+    }
+
+    console.log("sonuc: " + toplam)
+
+}
+let binary = "1011"
+convertBinaryToDecimal(binary)
+
+
+
+
+
+
