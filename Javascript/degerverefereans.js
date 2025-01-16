@@ -36,7 +36,7 @@ console.log(dizi2)
 dizi2.push(12)
 
 console.log(dizi)  // 1,2,3,12
-console.log(dizi2) // 1,2,3,121
+console.log(dizi2) // 1,2,3,12
 
 if (dizi == dizi2) {
     console.lof("Eşittir")
