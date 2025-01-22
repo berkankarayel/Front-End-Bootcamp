@@ -73,4 +73,5 @@ console.log(finalSettings);
 //! Spread Operatörü (...):
 
 // Dizileri genişletmek, kopyalamak veya birleştirmek için kullanılır.
+
 // Nesnelerin özelliklerini yaymak, birleştirmek veya kopyalamak için kullanılır.Fonksiyonlara dinamik ve esnek argümanlar geçirmek için kullanılır.
