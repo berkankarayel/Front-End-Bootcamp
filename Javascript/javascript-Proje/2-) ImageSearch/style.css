@@ -1,0 +1,79 @@
+.form-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#searchinput {
+    width: 75%;
+    padding: 5px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.button-wrapper {
+    margin: 10px 0px;
+}
+
+#searchButton {
+    width: 110px;
+    padding: 8px;
+    color: white;
+    background-color: green;
+    border-radius: 2px;
+    box-shadow: 3px 5px 10 px black;
+    border-radius: 6px;
+    border: none;
+}
+
+#clearButton {
+    width: 110px;
+    padding: 8px;
+    color: white;
+    background-color: red;
+    border-radius: 2px;
+    box-shadow: 3px 5px 10 px black;
+    border-radius: 6px;
+    border: none;
+}
+
+.imagelist-wrapper {
+
+    display: flex;
+    /* resimler yan yana gelir */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* resimler yana taşarsa alta geç */
+
+    justify-content: center;
+    /* rsimler ortalanır*/
+
+}
+
+.card {
+    margin: 20px;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 8px lightgrey;
+
+}
+
+#searchButton:hover {
+    color: white;
+    background: black;
+}
+
+#clearButton:hover {
+    color: aqua;
+    background-color: black;
+}
