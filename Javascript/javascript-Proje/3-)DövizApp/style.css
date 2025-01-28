@@ -1,0 +1,70 @@
+#container {
+    display: flex;
+    /* Konteyner içerisindeki elemanları bir esnek kutu düzeniyle hizalar. */
+    flex-direction: column;
+    /* Elemanlar dikey yönde sıralanır. */
+    align-items: center;
+    /* Elemanlar yatayda ortalanır. */
+}
+
+#main {
+    display: flex;
+    /* Ana kutu içerisindeki elemanları esnek düzen ile hizalar. */
+    flex-direction: column;
+    /* Elemanlar dikey yönde alt alta sıralanır. */
+    align-items: center;
+    /* Elemanlar yatayda ortalanır. */
+    border: 1px solid lightgrey;
+    /* Ana kutunun kenarlarına açık gri bir çerçeve ekler. */
+    width: 600px;
+    /* Ana kutunun genişliği 600 piksel olarak ayarlanır. */
+    height: auto;
+    /* Yükseklik içeriğe göre otomatik ayarlanır. */
+    padding: 10px;
+    /* Kutunun iç kenarlarından içeriye boşluk bırakır. */
+    border-radius: 5px;
+    /* Kenar köşeleri yuvarlanır. */
+    background-color: antiquewhite;
+    /* Kutunun arka plan rengi açık beyaz tonudur. */
+}
+
+.header-wrapper {
+    display: flex;
+    /* Başlık sarmalayıcı elemanlarını esnek düzen ile hizalar. */
+    flex-direction: column;
+    /* Elemanlar dikey yönde sıralanır. */
+    align-items: center;
+    /* Elemanlar yatayda ortalanır. */
+}
+
+.header-wrapper>h4 {
+    margin: 15px;
+    /* Başlık elemanının çevresine 15 piksel boşluk bırakır. */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Yazı tipi Arial veya yedek olarak belirtilen fontları kullanır. */
+    font-size: 20px;
+    /* Yazı boyutunu 20 piksel yapar. */
+}
+
+input {
+    padding: 5px;
+    /* Giriş kutusunun iç kenarlarına 5 piksel boşluk bırakır. */
+    margin: 0px 10px;
+    /* Giriş kutusunun sağ ve sol kenarına 10 piksel boşluk bırakır. */
+    width: 120px;
+    /* Giriş kutusunun genişliği 120 piksel olarak ayarlanır. */
+}
+
+select {
+    padding: 5px;
+    /* Seçim kutusunun iç kenarlarına 5 piksel boşluk bırakır. */
+}
+
+span {
+    display: block;
+    /* Span elemanını blok düzeyinde bir eleman yapar. */
+    text-align: center;
+    /* Metni yatayda ortalar. */
+    margin-top: 20px;
+    /* Üst tarafa 20 piksel boşluk bırakır. */
+}
