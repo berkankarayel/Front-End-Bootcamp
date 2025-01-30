@@ -7,7 +7,7 @@ const desc = document.querySelector(".desc");
 
 const weatherApi = new WeatherAPI();
 
-searchInput.addEventListener("keypress", getWeatherInfo);
+searchInput.addEventListener("keydown", getWeatherInfo); // Tuşa bastığın an çalışır
 
 
 function getWeatherInfo(e) {
@@ -35,6 +35,6 @@ function displayInfos(data) {
     clearInputs();
 }
 
-function clearInputs(){
-    searchInput.value="";
+function clearInputs() {
+    searchInput.value = "";
 }
