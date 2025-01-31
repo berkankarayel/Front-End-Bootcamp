@@ -1,10 +1,12 @@
+
+
 //Elementleri Seçmek
 
 const container = document.querySelector(".container");
 const selectMovie = document.querySelector("#selectMovie");
 const count = document.querySelector("#count");
 const amount = document.querySelector("#amount");
-const seats = Array.from(document.querySelectorAll(".seat"));
+const seats = Array.from(document.querySelectorAll(".seat")); /* koltukların indeksini almak için bunu kullandık */
 const buyButton = document.querySelector("#buyButton");
 
 runEventListeners();
@@ -54,30 +56,33 @@ function buyTicket() {
     }
 }
 
+/* seçilen koltukların rengini sarıya boyadık */
+
 function select(e) {
     const selectedElement = e.target.parentElement;
     if (selectedElement.classList.contains("seat") && !selectedElement.classList.contains(".full")) {
-        selectedElement.classList.toggle("selected"); /* Batiğimızda sarı renge çevirir. */
+        selectedElement.classList.toggle("selected");
         calculate();
         saveSelectedSeatsIndexToStorage();
         saveSelectedMovieIndexToStorage();
     }
 }
-
+/* filmi değiştitirsek fiyat yeniden ehsaplanır  */
 function changeMovie() {
     calculate();
     saveSelectedMovieIndexToStorage();
 }
 
+/* Kaç adet sarı koltuk seçildğini bze verir. */
 function getSelectedSeats() {
-    const selectedList = [...container.querySelectorAll(".selected")]; /* Her bir elemanı sperated metodu ile araya çevirir. */
+    const selectedList = [...container.querySelectorAll(".selected")];
     return selectedList;
 }
 
 function getSelectedSeatsIndex() {
-    const selectedList = getSelectedSeats(); /* Seçtiğimiz sarı renkler bir değikene atadık. */
+    const selectedList = getSelectedSeats();
     const selectedSeatsIndex = selectedList.map((seat) => {
-        return seats.indexOf(seat);
+        return seats.indexOf(seat); /* koltukların indeks numarasını alır */
     })
     return selectedSeatsIndex;
 }
@@ -92,7 +97,7 @@ function saveSelectedMovieIndexToStorage() {
     Storagex.addSelectedMovieToStorage(selectedMovieIndex);
 }
 
-
+/* seçilen koltuğu baz alarak filmlerin valuelarına göre hesaplama yapar. */
 function calculate() {
     const seletedSeatsCount = getSelectedSeats().length;
     //selectMovie.options[selectMovie.selectedIndex].value;

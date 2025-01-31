@@ -1,8 +1,8 @@
 class Storagex {
 
-    static keySelectedSeats = "keySelectedSeats";
-    static keyFullSeats = "keyFullSeats";
-    static keySelectedMovie = "keySelectedMovie";
+    static keySelectedSeats = "a";
+    static keyFullSeats = "b";
+    static keySelectedMovie = "c";
 
     //Listeleme
     static getSelectedSeatsFromStorage() {
@@ -26,7 +26,7 @@ class Storagex {
     }
 
     static getSelectedMovieIndexFromStorage() {
-      return localStorage.getItem(this.keySelectedMovie);
+        return localStorage.getItem(this.keySelectedMovie);
     }
     // Ekleme
 
@@ -35,8 +35,8 @@ class Storagex {
     }
 
     static addFullSeatToStorage(indexs) {
-       const fullSeatsIndex= this.getFullSeatsFromStorage();
-        indexs.forEach(index=>fullSeatsIndex.push(index))
+        const fullSeatsIndex = this.getFullSeatsFromStorage();
+        indexs.forEach(index => fullSeatsIndex.push(index))
         localStorage.setItem(this.keyFullSeats, JSON.stringify(fullSeatsIndex));
     }
 
