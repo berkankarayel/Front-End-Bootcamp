@@ -3,9 +3,9 @@
 Bu repoda HTML, CSS, JavaScript ve React ile yaptığım projeleri ve öğrendiğim konuları paylaşıyorum
  
 💡 Burada:
-✔️ Temel web teknolojileriyle projeler geliştiriyorum.
-✔️ Html css Javascript kullanarak tasarım bilgilerimi geliştiriyorum.
-✔️ JavaScript ve React ile dinamik uygulamalar yapıyorum.
+#### ✔️ Temel web teknolojileriyle projeler geliştiriyorum.
+#### ✔️ Html css Javascript kullanarak tasarım bilgilerimi geliştiriyorum.
+#### ✔️ JavaScript ve React ile dinamik uygulamalar yapıyorum.
 
 Aşağıda yaptığım projeleri bulabilir, kaynak kodları inceleyebilir ve demo bağlantılarından projeleri canlı olarak görebilirsiniz. 🚀
 
