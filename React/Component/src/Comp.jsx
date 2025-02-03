@@ -5,6 +5,7 @@ function Comp() {
         <div>
             <div>Berkan</div>
             <div>Karayel</div>
+            <div>Süleyman Demirel University</div>
         </div>
     )
 }
