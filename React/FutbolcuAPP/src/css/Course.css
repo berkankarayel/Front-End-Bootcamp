@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Kartlar yeni satıra geçsin */
+    justify-content: flex-start;
+    /* Kartları sola yasla */
+    align-items: flex-start;
+    /* Kartların üst hizasını koru */
+}
+
+
+.course-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* Kartları sola yasla */
+    align-items: flex-start;
+    /* Üst hizasını koru */
+    gap: 10px;
+    /* Kartlar arasındaki boşluğu artır */
+}
+
+.course {
+    display: flex;
+    /* İçerik dikey hizalansın */
+    flex-direction: column;
+    width: 220px;
+    height: 340px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(75, 202, 168);
+}
+
+.course:hover {
+    transition: 0.9s;
+    background-color: rgb(147, 17, 180);
+    color: rgb(238, 255, 0);
+}
+
+
+.titlee {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: brown;
+}
+
+.course-desc {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.courselink {
+    font-size: 15px;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 10px;
+}
